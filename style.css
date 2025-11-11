@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Bengali:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* font family  */
+
+  --primary-font-family: "Inter", sans-serif;
+  --secondary-font-family: "Noto Serif", serif;
+
+  /* font color  */
+
+  --secondary-text-color: #e95a08;
+  --text-color: #b4aeae;
+
+  /* font size  */
+
+  --fs-p: 1rem; /* 16px */
+  --fs-small: 0.875rem; /* 14px */
+  --fs-caption: 0.75rem; /* 12px */
+  --fs-h1: 2.5rem; /* 40px */
+  --fs-h1-base: 4.0625rem; /* 65px  */
+  --fs-h2: 2rem; /* 32px */
+  --fs-h3: 1.75rem; /* 28px */
+  --fs-h4: 1.5rem; /* 24px */
+  --fs-h5: 1.25rem; /* 20px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+html,
+body {
+  font-family: var(--primary-font-family);
+}
+
+header,
+main,
+footer {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* nav design  */
+
+header > nav > a > img {
+  width: 100px;
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+header > nav > .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+header > nav > .nav-links > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+header > nav > .nav-links > ul > li > a {
+  font-weight: 500;
+}
+
+header > nav > .nav-links > ul > li > a:hover {
+  color: inherit;
+}
+
+.header-image {
+  display: flex;
+  align-items: end;
+  margin-top: 120px;
+}
+
+.header-image > div > img {
+  height: 440px;
+  width: 570px;
+  object-fit: cover;
+}
+
+.header-image > .header-content > h1 {
+  font-size: var(--fs-h1-base);
+  font-family: var(--secondary-font-family);
+  line-height: 1.5;
+  padding-right: 80px;
+}
+
+.header-image > .header-content > h1 > span {
+  color: var(--secondary-text-color); 
+}
+
+.header-image > .header-content > p {
+  color: var(--text-color);
+  font-size: 22px;
+  padding-right: 120px;
+  line-height: 1.5;
+}
