@@ -505,6 +505,7 @@ footer {
 
 .logo-content > p {
   padding-top: 20px;
+  text-wrap: wrap;
   font-size: 22px;
   color: var(--text-color);
 }
